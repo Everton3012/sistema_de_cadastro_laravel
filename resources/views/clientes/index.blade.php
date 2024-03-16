@@ -8,8 +8,8 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    <p class="mb-4">Olá <strong>{{ Auth::user()->name }}</strong></p>
+                <div class="p-6 pb-0 text-gray-900 dark:text-gray-100">
+                    <p>Olá <strong>{{ Auth::user()->name }}</strong></p>
                 </div>
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 
@@ -40,7 +40,7 @@
                     </table>
                     @endcan
                     <p class="mt-4">
-                        <a href="{{ route('cliente.create')}}" class="bg-blue-500 text-white rounded p-2">cadastrar novo cliente</a>
+                        <a href="{{ route('cliente.create')}}" class="bg-blue-500 hover:bg-blue-400 text-white rounded p-2">cadastrar novo cliente</a>
                     </p>
                 </div>
             </div>

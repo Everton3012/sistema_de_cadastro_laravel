@@ -14,13 +14,13 @@
 
                     <p class="mb-4">
                         @can('level')
-                        <a href="{{ route('cliente.index')}}" class="bg-blue-500 text-white rounded p-2">lista de Clientes</a>
+                        <a href="{{ route('cliente.index')}}" class="bg-blue-500 cursor-pointer hover:bg-blue-400 text-white rounded p-2">lista de Clientes</a>
                         @endcan
 
                     </p>
 
                     @if (session('msg'))
-                    <p class="bg-blue-500 p-2 rounded text-center text-white mb-4">{{session('msg')}}</p>
+                    <p class="bg-blue-500  p-2 rounded text-center text-white mb-4">{{session('msg')}}</p>
 
                     @endif
                     <form action="{{ route('cliente.store') }}" method="post">
@@ -55,8 +55,8 @@
                             </div>
 
                             <div class="p-4 rounded -ouverflow-hidden">
-                                <input type="submit" value="Cadastrar" class="bg-blue-500 text-white rounded p-2">
-                                <input type="reset" value="Linpar" class="bg-red-500 text-white rounded p-2">
+                                <input type="submit" value="Cadastrar" class="bg-blue-500 cursor-pointer hover:bg-blue-400 text-white rounded p-2">
+                                <input type="reset" value="Linpar" class="bg-red-500 hover:bg-red-400 cursor-pointer text-white rounded p-2">
                             </div>
                        </fieldset>
                     </form>

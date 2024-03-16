@@ -45,7 +45,7 @@
 
                                     @can('level')
                                         <td class="text-center">
-                                        <a href="{{route('user.edit', $user->id)}}">Editar</a>
+                                        <a href="{{route('user.edit', $user->id)}}"> <i class="fa-solid fa-pen-to-square"></i> </a>
                                         </td>
 
                                         @endcan

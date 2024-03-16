@@ -23,11 +23,11 @@
                             </tr>
                             <tbody>
                                 @foreach ($clientes as $cliente)
-                                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-950">
+                                    <tr  class="border-b-2 hover:bg-gray-100 dark:hover:bg-gray-950">
                                         <td class="p-2">{{ $cliente->nome }}</td>
                                         <td class="p-2">{{ $cliente->telefone }}</td>
                                         <td class="p-2">{{ $cliente->email }}</td>
-                                        <td><a href="{{ route('cliente.show' , $cliente->id ) }}"><i class="fa-solid fa-circle-info"></i></a></td>
+                                        <td class="p-5" ><a href="{{ route('cliente.show' , $cliente->id ) }}"><i class="fa-solid fa-circle-info"></i></a></td>
                                     </tr>
                                 @endforeach
                             </tbody>
