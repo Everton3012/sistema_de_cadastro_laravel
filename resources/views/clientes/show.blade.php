@@ -20,7 +20,7 @@
                     </button></a>
                     <a href="{{route('cliente.edit',$cliente->id)}}"><button class="hover:bg-purple-400 bg-purple-500 text-white rounded py-2 px-4" type="button">
                     <i class="fa-solid fa-pen-to-square"></i> editar</button></a>
-                    <a href="{{route('cliente.edit',$cliente->id)}}"><button class="hover:bg-red-400 bg-red-500 text-white rounded py-2 px-4" type="button">
+                    <a href="{{route('confirma.delete',$cliente->id)}}"><button class="hover:bg-red-400 bg-red-500 text-white rounded py-2 px-4" type="button">
                     <i class="fa-solid fa-delete-left"></i> deletar</button></a>
                 </div>
                 <div class="pt-3 p-6 text-gray-900 dark:text-gray-50">

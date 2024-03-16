@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Cliente;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ClienteController extends Controller
 {
@@ -87,6 +88,12 @@ class ClienteController extends Controller
      */
     public function destroy(Cliente $cliente)
     {
-        //
+        Cliente::findOrFail($cliente->id)->delete();
+        return redirect()->route('meus.clientes', Auth::user()->id);
+    }
+
+    public function confirma_delete( Cliente $id ){
+
+        return view('clientes.confirma_delete',['id' => $id]);
     }
 }
