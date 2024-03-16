@@ -70,7 +70,7 @@ class ClienteController extends Controller
      */
     public function edit(Cliente $cliente)
     {
-        //
+        return view('clientes.edit', ['cliente' => $cliente]);
     }
 
     /**
@@ -78,7 +78,8 @@ class ClienteController extends Controller
      */
     public function update(Request $request, Cliente $cliente)
     {
-        //
+        Cliente::findOrFail($cliente->id)->update($request->all());
+        return redirect()->route('cliente.show',$cliente->id);
     }
 
     /**
